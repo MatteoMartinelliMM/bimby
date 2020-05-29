@@ -54,7 +54,10 @@ class ListaClientiState extends State<ListaClienti>
         tabs: <Widget>[Tab(text: 'LISTA'), Tab(text: 'DA LAVORARE')],
         controller: _tabController,
       ),
-      body: body,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Center(child: body),
+      ),
     );
   }
 
